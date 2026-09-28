@@ -44,6 +44,18 @@ h2 { margin: 0; font-size: clamp(27px, 3.2vw, 43px); font-weight: 400; line-heig
 .categories p { margin: -10px 0 0; font-size: 12px; line-height: 1.6; color: var(--muted); }
 .closing { background: #22281f; margin-top: 50px; padding: 100px 24px; text-align: center; }
 .closing h2 { margin-bottom: 30px; }
+.shop { padding-block: 30px 70px; border-top: 1px solid var(--line); }
+.shop-page { min-height: 100svh; display: flex; flex-direction: column; }
+.shop-page header { position: relative; border-bottom: 1px solid var(--line); }
+.shop-page main { flex: 1; }
+.shop-page .shop { border-top: 0; }
+.shop-page h1 { font-size: clamp(32px, 4.5vw, 60px); line-height: 1.15; letter-spacing: -0.035em; }
+.shop-page .nav-links [aria-current="page"] { text-decoration: underline; text-underline-offset: 5px; }
+.shop-intro { margin: 20px 0 0; color: var(--muted); font-size: 17px; line-height: 1.8; }
+.shop-product { padding: clamp(20px, 4vw, 56px); background: #22281f; color: var(--text); border: 1px solid var(--line); border-radius: 8px; color-scheme: dark; }
+.shop-product > p { margin: 0; line-height: 1.6; }
+.shop-retry { margin-top: 20px; background: #8b7108; color: #fff; border-color: #8b7108; cursor: pointer; }
+.shop-retry[hidden], #shop-status[hidden] { display: none; }
 footer { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px; padding-block: 25px; color: var(--muted); font-size: 12px; }
 .footer-links { display: flex; gap: 28px; }
 footer a { display: inline-flex; align-items: center; min-height: 44px; }
