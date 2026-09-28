@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#161815" />
+    <meta name="description" content="How KOVA uses cookies and storage on your device." />
+    <title>KOVA - Cookie Policy</title>
+    <link rel="icon" href="./images/kova_alleen_x_png.png" type="image/png" />
+    <link rel="stylesheet" href="./site.css" />
+    <link rel="stylesheet" href="./legal.css" />
+  </head>
+  <body class="legal-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header>
+      <nav class="wrap" aria-label="Main navigation">
+        <a class="logo" href="./index.html" aria-label="KOVA home"><img src="./images/kova_wit_x_png.png" alt="KOVA" /></a>
+        <div class="nav-links">
+          <a href="./index.html#about">About</a>
+          <span class="nav-soon" role="link" aria-disabled="true" title="Coming soon">Shop</span>
+          <a href="./index.html#download">Download</a>
+        </div>
+      </nav>
+    </header>
+    <main id="main" class="legal-content">
+
+      <p class="eyebrow">KOVA / Legal</p>
+      <h1>Cookie Policy</h1>
+      <p class="intro">How KOVA uses cookies and storage on your device.</p>
+      <p class="updated">Last updated: <time datetime="2026-09-25">25 September 2026</time></p>
+
+      <h2>1. Cookies and similar storage</h2>
+      <p>Cookies are small records stored by your browser. KOVA also uses local storage, browser databases and cached files. In the app, similar storage exists inside the app's web view. This policy covers these technologies as well as cookies.</p>
+      <h2>2. KOVA's local storage</h2>
+      <p>The following records support the map and features you use. They have no automatic expiry and remain until replaced or cleared. Their contents stay in local storage, although using a related feature can send data as described below and in our <a href="./privacy.html">Privacy Policy</a>.</p>
+      <dl>
+        <dt>Last known location</dt><dd><code>kova_last_location_v1</code> remembers coordinates and a timestamp to reopen the map near your last location. Requests for that map area and nearby spots go to the map and database services.</dd>
+        <dt>Saved spots</dt><dd><code>kova_saved_spots_v1</code> keeps the spots you save on this device.</dd>
+        <dt>Route and travel preference</dt><dd><code>kova_route_spots_v1</code> and <code>kova_route_mode_v1</code> remember your planned stops and transport choice. Opening navigation sends the chosen route to the navigation provider.</dd>
+        <dt>Previous ratings</dt><dd><code>kova_spot_ratings_v1</code> remembers your previous score so you can update it. Rating a spot also updates its aggregate score on the server.</dd>
+        <dt>Introduction preference</dt><dd><code>kova_tutorial_seen_v1</code> remembers whether you have already seen the introduction.</dd>
+      </dl>
+      <h2>3. Security, sign-in and cached resources</h2>
+      <p>Firebase App Check and reCAPTCHA Enterprise help protect map data from abuse. They may use browser storage, security cookies and device signals. Google documents the <code>_GRECAPTCHA</code> cookie for risk analysis when reCAPTCHA runs. App Check tokens expire and are refreshed; other security storage is controlled by the provider.</p>
+      <p>If you sign in through KOVA's account page, Firebase Authentication can keep a persistent sign-in session in browser storage. Browser or app caches can also retain maps, scripts and images to avoid repeated downloads. Their lifetime depends on response headers, provider settings and your browser or device.</p>
+      <p>See <a href="https://firebase.google.com/support/privacy">Firebase's privacy information</a>, <a href="https://cloud.google.com/recaptcha/docs/faq">Google's reCAPTCHA information</a>, <a href="https://cloud.google.com/terms/data-processing-addendum">Google Cloud's Data Processing Addendum</a> and <a href="https://www.maptiler.com/privacy-policy/">MapTiler's Privacy Policy</a> for provider details.</p>
+      <h2>4. Analytics and advertising</h2>
+      <p>The current public KOVA pages do not initialise Google Analytics or advertising trackers. Security checks and technical service logs are separate from audience analytics. External websites you choose to open may use their own cookies.</p>
+      <p>Where applicable law requires consent for non-essential cookies or similar storage, it must be obtained before they are used. This policy is information, not a consent request, and continued browsing is not treated as consent.</p>
+      <h2>5. Your controls</h2>
+      <p>You can block cookies or clear cookies, local storage and site data in your browser settings. On Android, clearing KOVA's app storage removes local app data. Device location permission can be changed separately in system settings.</p>
+      <p>Clearing local data can remove saved spots and routes, reset the introduction and forget previous ratings. It does not remove published ratings, submitted photos or server-side account data. Blocking security or authentication storage may prevent protected features or sign-in from working. Storage needed by a feature may be created again when you use that feature.</p>
+      <h2>6. Questions and changes</h2>
+      <p>For storage or privacy questions, contact <a href="mailto:hello@kova.spot">hello@kova.spot</a>. This policy will be updated when KOVA's use of these technologies changes.</p>
+    </main>
+    <footer class="wrap">
+      <span>&copy; 2026 KOVA</span>
+      <div class="footer-links">
+        <a href="./privacy.html">Privacy</a>
+        <a href="./terms.html">Terms</a>
+        <a href="./cookies.html" aria-current="page">Cookies</a>
+      </div>
+    </footer>
+  </body>
+</html>

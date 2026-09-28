@@ -1,0 +1,104 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#161815" />
+    <meta name="description" content="Discover swimming spots, viewpoints and unexpected places with the KOVA app for iOS and Android." />
+    <title>KOVA — Every spot is a treasure.</title>
+    <link rel="icon" href="./images/kova_alleen_x_png.png" type="image/png" />
+    <link rel="stylesheet" href="./site.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header>
+      <nav class="wrap" aria-label="Main navigation">
+        <a class="logo" href="./index.html" aria-label="KOVA home"><img src="./images/kova_wit_x_png.png" alt="KOVA" /></a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <span class="nav-soon" role="link" aria-disabled="true" title="Coming soon">Shop</span>
+          <a href="#download">Download</a>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <!-- Static capture of the KOVA map centered on Belgium and its public spots, 2026-09-28. -->
+        <img class="hero-photo" src="images/map-spots.jpg" alt="" width="2200" height="1400" fetchpriority="high" />
+        <div class="hero-title">
+          <h1 id="hero-title">Every spot is<br />a treasure.</h1>
+        </div>
+        <div class="hero-bottom">
+          <p>Find swimming spots, quiet viewpoints and unexpected places. With KOVA on your phone.</p>
+          <!-- Launch: replace these disabled buttons with links to the App Store and Google Play. -->
+          <div class="downloads" aria-describedby="hero-availability">
+            <button class="button" type="button" disabled>Download for iOS</button>
+            <button class="button secondary" type="button" disabled>Download for Android</button>
+          </div>
+          <p class="availability" id="hero-availability">Free to download and use. Available on iOS and Android.</p>
+        </div>
+      </section>
+      <section class="about wrap" id="about" aria-labelledby="about-title">
+        <div class="about-row">
+          <p class="section-label">About KOVA</p>
+          <h2 id="about-title">For the days you want to go somewhere, but don't know where.</h2>
+        </div>
+        <div class="about-row about-copy">
+          <p class="section-label">The app</p>
+          <div>
+            <p>A place to swim, a view worth the walk, a quiet corner of the city. The KOVA app brings these spots together on one map, so you can find somewhere to spend your afternoon.</p>
+          </div>
+        </div>
+        <div class="about-row about-copy">
+          <p class="section-label">Your spots</p>
+          <div>
+            <p>Know a spot worth sharing? Add your own spots in the KOVA app. Each submission is reviewed before it goes live. Once approved, your spot appears on the map for others to discover.</p>
+          </div>
+        </div>
+        <div class="about-row about-copy">
+          <p class="section-label" id="spot-types-label">Spot types</p>
+          <div>
+            <p id="spot-types-description">Three colours, three types of spots. Each coloured X on the map shows what kind of place you'll find: water, nature or urban.</p>
+          </div>
+        </div>
+        <ul class="categories" aria-labelledby="spot-types-label" aria-describedby="spot-types-description">
+          <li>
+            <img src="./images/water_x.png" alt="" width="45" height="52" loading="lazy" />
+            <h3>Water spots</h3>
+            <p>In and around the water.</p>
+          </li>
+          <li>
+            <img src="./images/nature_x.png" alt="" width="45" height="52" loading="lazy" />
+            <h3>Nature spots</h3>
+            <p>A little further outside.</p>
+          </li>
+          <li>
+            <img src="./images/urban_x.png" alt="" width="45" height="52" loading="lazy" />
+            <h3>Urban spots</h3>
+            <p>Another side of the city.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="closing" id="download" aria-labelledby="closing-title">
+        <h2 id="closing-title">Find a spot. Head out.</h2>
+        <!-- Launch: replace these disabled buttons with links to the App Store and Google Play. -->
+        <div class="downloads" aria-describedby="download-availability">
+          <button class="button" type="button" disabled>Download for iOS</button>
+          <button class="button secondary" type="button" disabled>Download for Android</button>
+        </div>
+        <p class="availability" id="download-availability">Free to download and use. Available on iOS and Android.</p>
+      </section>
+    </main>
+    <footer class="wrap">
+      <span>&copy; 2026 KOVA</span>
+      <div class="footer-links">
+        <a href="./privacy.html">Privacy</a>
+        <a href="./terms.html">Terms</a>
+        <a href="./cookies.html">Cookies</a>
+      </div>
+      <p class="map-credit">
+        &middot;
+      </p>
+    </footer>
+  </body>
+</html>
