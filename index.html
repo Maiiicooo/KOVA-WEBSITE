@@ -8,6 +8,7 @@
     <title>KOVA — Every spot is a treasure.</title>
     <link rel="icon" href="./images/kova_alleen_x_png.png" type="image/png" />
     <link rel="stylesheet" href="./site.css" />
+    <script src="./site.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -30,12 +31,12 @@
         </div>
         <div class="hero-bottom">
           <p>Discover swimming spots, quiet viewpoints and unexpected places across Belgium. More countries coming later.</p>
-          <!-- Launch: replace these disabled buttons with links to the App Store and Google Play. -->
+          <!-- Launch: replace the coming-soon buttons with the live store links. -->
           <div class="downloads" aria-describedby="hero-availability">
-            <button class="button" type="button" disabled>Download for iOS</button>
-            <button class="button secondary" type="button" disabled>Download for Android</button>
+            <button class="button" type="button" data-app-coming-soon aria-haspopup="dialog" aria-controls="app-coming-soon" disabled>iOS — Coming soon</button>
+            <button class="button secondary" type="button" data-app-coming-soon aria-haspopup="dialog" aria-controls="app-coming-soon" disabled>Android — Coming soon</button>
           </div>
-          <p class="availability" id="hero-availability">Free to download and use. Available on iOS and Android.</p>
+          <p class="availability" id="hero-availability">Coming soon to iOS and Android. Downloads are not available yet.</p>
         </div>
       </section>
       <section class="about wrap" id="about" aria-labelledby="about-title">
@@ -59,7 +60,7 @@
         <div class="about-row about-copy">
           <p class="section-label" id="spot-types-label">Spot types</p>
           <div>
-            <p id="spot-types-description">Three colours, three types of spots. Each coloured X on the map shows what kind of place you'll find: water, nature or urban.</p>
+            <p id="spot-types-description">Three colours, three types of spots. Each coloured X on the map shows what kind of place you'll find:   <strong style="color: #3B82C4;">water</strong>, <strong style="color: #4E7D4A;">nature</strong> or <strong style="color: #8b7108;">urban</strong>.</p>
           </div>
         </div>
         <ul class="categories" aria-labelledby="spot-types-label" aria-describedby="spot-types-description">
@@ -82,14 +83,23 @@
       </section>
       <section class="closing" id="download" aria-labelledby="closing-title">
         <h2 id="closing-title">Find a spot. Head out.</h2>
-        <!-- Launch: replace these disabled buttons with links to the App Store and Google Play. -->
+        <!-- Launch: replace the coming-soon buttons with the live store links. -->
         <div class="downloads" aria-describedby="download-availability">
-          <button class="button" type="button" disabled>Download for iOS</button>
-          <button class="button secondary" type="button" disabled>Download for Android</button>
+          <button class="button" type="button" data-app-coming-soon aria-haspopup="dialog" aria-controls="app-coming-soon" disabled>iOS — Coming soon</button>
+          <button class="button secondary" type="button" data-app-coming-soon aria-haspopup="dialog" aria-controls="app-coming-soon" disabled>Android — Coming soon</button>
         </div>
-        <p class="availability" id="download-availability">Free to download and use. Available on iOS and Android.</p>
+        <p class="availability" id="download-availability">Coming soon to iOS and Android. Downloads are not available yet.</p>
       </section>
     </main>
+    <dialog class="coming-soon" id="app-coming-soon" aria-labelledby="coming-soon-title" aria-describedby="coming-soon-description">
+      <img src="./images/kova_alleen_x_png.png" alt="" width="45" height="52" />
+      <p class="section-label">A little more exploring ahead</p>
+      <h2 id="coming-soon-title">The adventure is coming soon.</h2>
+      <p id="coming-soon-description">We’re getting KOVA ready for iOS and Android. The app isn’t available to download yet. Check back here for the launch!</p>
+      <form method="dialog">
+        <button class="button" type="submit" autofocus>Got it</button>
+      </form>
+    </dialog>
     <footer class="wrap">
       <span>&copy; 2026 KOVA</span>
       <div class="footer-links">

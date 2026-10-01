@@ -27,6 +27,16 @@ h1 { margin: 0; font-size: clamp(62px, 9vw, 136px); font-weight: 500; line-heigh
 .button { display: inline-flex; align-items: center; justify-content: center; min-height: 50px; padding: 0 32px; border: 1px solid var(--text); border-radius: 100px; background: var(--text); color: #20251e; font-size: 13px; font-weight: 500; transition: background 0.15s; font-family: inherit; }
 .button:not(:disabled):hover { background: #dcded4; }
 .button:disabled { cursor: default; opacity: 1; }
+.button:not(:disabled) { cursor: pointer; }
+.button:focus-visible { outline: 2px solid var(--text); outline-offset: 5px; }
+.button.secondary:not(:disabled):hover { background: #34382f; }
+.coming-soon { width: min(480px, calc(100% - 40px)); max-height: calc(100svh - 40px); padding: clamp(24px, 5vw, 44px); border: 1px solid var(--line); border-radius: 20px; background: var(--bg); color: var(--text); text-align: center; box-shadow: 0 24px 80px #0006; }
+.coming-soon::backdrop { background: rgba(0, 0, 0, 0.72); }
+.coming-soon > img { object-fit: contain; margin-bottom: 20px; }
+.coming-soon .section-label { margin: 0 0 16px; }
+.coming-soon h2 { font-size: clamp(28px, 5vw, 36px); }
+.coming-soon > p:not(.section-label) { margin: 20px 0 28px; color: var(--muted); font-size: 16px; line-height: 1.7; }
+html:has(.coming-soon[open]) { overflow: hidden; }
 .button.secondary { background: transparent; color: var(--text); border-color: #8d9288; }
 .downloads { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
 .hero-bottom .availability, .availability { margin: 16px 0 0; max-width: none; color: var(--muted); font-size: 12px; line-height: 1.5; }
