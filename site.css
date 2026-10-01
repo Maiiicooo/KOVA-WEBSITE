@@ -64,6 +64,8 @@ h2 { margin: 0; font-size: clamp(27px, 3.2vw, 43px); font-weight: 400; line-heig
 .shop-intro { margin: 20px 0 0; color: var(--muted); font-size: 17px; line-height: 1.8; }
 .shop-product { padding: clamp(20px, 4vw, 56px); background: #22281f; color: var(--text); border: 1px solid var(--line); border-radius: 8px; color-scheme: dark; }
 .shop-product > p { margin: 0; line-height: 1.6; }
+/* Match Shopify's light iframe document so Safari preserves its transparent canvas. */
+.shop-product iframe { color-scheme: light; background: #22281f; }
 .shop-retry { margin-top: 20px; background: #8b7108; color: #fff; border-color: #8b7108; cursor: pointer; }
 .shop-retry[hidden], #shop-status[hidden] { display: none; }
 footer { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px; padding-block: 25px; color: var(--muted); font-size: 12px; }

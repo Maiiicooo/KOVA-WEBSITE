@@ -50,8 +50,11 @@
                 '@media (min-width: 601px)': {
                   'max-width': '100%', 'margin-left': '0', 'margin-bottom': '0'
                 },
-                'text-align': 'left'
+                'text-align': 'left',
+                'background-color': '#22281f'
               },
+              imgWrapper: { 'background-color': '#22281f' },
+              img: { 'background-color': '#22281f' },
               title: { 'font-size': '26px', color: '#f5f4ef' },
               description: { color: '#adb0a7', 'line-height': '1.7' },
               button: buttonStyles,
