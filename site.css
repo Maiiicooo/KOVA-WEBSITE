@@ -59,9 +59,14 @@ h2 { margin: 0; font-size: clamp(27px, 3.2vw, 43px); font-weight: 400; line-heig
 .shop-page header { position: relative; border-bottom: 1px solid var(--line); }
 .shop-page main { flex: 1; }
 .shop-page .shop { border-top: 0; }
+.shop-page .about-row { grid-template-columns: 1fr; gap: 20px; text-align: center; justify-items: center; }
+.shop-page .about-row .section-label { margin: 0; }
 .shop-page h1 { font-size: clamp(32px, 4.5vw, 60px); line-height: 1.15; letter-spacing: -0.035em; }
 .shop-page .nav-links [aria-current="page"] { text-decoration: underline; text-underline-offset: 5px; }
 .shop-intro { margin: 20px 0 0; color: var(--muted); font-size: 17px; line-height: 1.8; }
+.shop-preview { max-width: 640px; margin: 0 auto; text-align: center; }
+.shop-preview img { display: block; width: 100%; height: auto; border-radius: 8px; }
+.shop-preview figcaption { margin-top: 24px; font-size: clamp(22px, 3vw, 30px); letter-spacing: -0.025em; }
 .shop-product { padding: clamp(20px, 4vw, 56px); background: #22281f; color: var(--text); border: 1px solid var(--line); border-radius: 8px; color-scheme: dark; }
 .shop-product > p { margin: 0; line-height: 1.6; }
 /* Match Shopify's light iframe document so Safari preserves its transparent canvas. */

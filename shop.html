@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#161815" />
-    <meta name="description" content="Shop the KOVA beanie. For the colder days outside." />
+    <meta name="description" content="The KOVA beanie. For the colder days outside. Coming soon." />
     <title>KOVA — Every spot is a treasure.</title>
     <link rel="icon" href="./images/kova_alleen_x_png.png" type="image/png" />
     <link rel="stylesheet" href="./site.css" />
     <script src="./shop.js" defer></script>
   </head>
-  <body class="shop-page">
+  <!-- Zet data-shopify-enabled op "true" om de bewaarde Shopify-shop weer te activeren. -->
+  <body class="shop-page" data-shopify-enabled="false">
     <a class="skip-link" href="#main">Skip to content</a>
     <header>
       <nav class="wrap" aria-label="Main navigation">
@@ -25,13 +26,15 @@
     <main id="main">
       <section class="shop wrap" id="shop" aria-labelledby="shop-title">
         <div class="about-row">
-          <p class="section-label">KOVA shop</p>
           <div>
             <h1 id="shop-title">For the colder days outside.</h1>
-            <p class="shop-intro">Take KOVA with you. Meet the KOVA beanie.</p>
           </div>
         </div>
-        <div class="shop-product">
+        <figure class="shop-preview" id="shop-preview">
+          <img src="./images/Herfstportret%20in%20het%20bos%20met%20beanie.png" alt="The KOVA beanie in an autumn forest" width="1179" height="1334" fetchpriority="high" />
+          <figcaption>Coming soon</figcaption>
+        </figure>
+        <div class="shop-product" id="shop-storefront" hidden>
           <p id="shop-status" role="status">Loading the KOVA beanie&hellip;</p>
           <div id="product-component-1790601866334"></div>
           <button class="button shop-retry" id="shop-retry" type="button" hidden>Try again</button>

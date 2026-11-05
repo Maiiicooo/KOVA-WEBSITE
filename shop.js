@@ -1,6 +1,12 @@
 (function () {
   'use strict';
 
+  // Keep the Shopify configuration below for launch; toggle it in shop.html.
+  if (document.body.dataset.shopifyEnabled !== 'true') return;
+
+  document.getElementById('shop-preview').hidden = true;
+  document.getElementById('shop-storefront').hidden = false;
+
   var node = document.getElementById('product-component-1790601866334');
   var status = document.getElementById('shop-status');
   var retry = document.getElementById('shop-retry');
