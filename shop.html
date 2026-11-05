@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -31,7 +31,16 @@
           </div>
         </div>
         <figure class="shop-preview" id="shop-preview">
-          <img src="./images/Herfstportret%20in%20het%20bos%20met%20beanie.png" alt="The KOVA beanie in an autumn forest" width="1179" height="1334" fetchpriority="high" />
+          <div class="beanie-carousel" role="region" aria-roledescription="carousel" aria-label="KOVA beanie colours" tabindex="0">
+            <div class="beanie-track">
+              <img src="./images/portret-yellow.png" alt="Portrait wearing the yellow KOVA beanie" width="1086" height="1448" fetchpriority="high" draggable="false" />
+              <img src="./images/portret-blue.png" alt="Portrait wearing the blue KOVA beanie" width="1111" height="1416" aria-hidden="true" draggable="false" />
+              <img src="./images/portret-black.png" alt="Portrait wearing the black KOVA beanie" width="1111" height="1416" aria-hidden="true" draggable="false" />
+            </div>
+            <button class="beanie-arrow beanie-prev" type="button" aria-label="Previous colour" hidden>&#8249;</button>
+            <button class="beanie-arrow beanie-next" type="button" aria-label="Next colour" hidden>&#8250;</button>
+          </div>
+          <p class="beanie-position" aria-live="polite" aria-atomic="true">Yellow · 1 / 3</p>
           <figcaption>Coming soon</figcaption>
         </figure>
         <div class="shop-product" id="shop-storefront" hidden>

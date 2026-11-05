@@ -64,8 +64,18 @@ h2 { margin: 0; font-size: clamp(27px, 3.2vw, 43px); font-weight: 400; line-heig
 .shop-page h1 { font-size: clamp(32px, 4.5vw, 60px); line-height: 1.15; letter-spacing: -0.035em; }
 .shop-page .nav-links [aria-current="page"] { text-decoration: underline; text-underline-offset: 5px; }
 .shop-intro { margin: 20px 0 0; color: var(--muted); font-size: 17px; line-height: 1.8; }
-.shop-preview { max-width: 640px; margin: 0 auto; text-align: center; }
+.shop-preview { max-width: 520px; margin: 0 auto; text-align: center; }
 .shop-preview img { display: block; width: 100%; height: auto; border-radius: 8px; }
+.beanie-carousel { position: relative; overflow: hidden; border-radius: 8px; touch-action: pan-y pinch-zoom; }
+.beanie-track { display: flex; transition: transform 300ms ease; }
+.beanie-track img { flex: 0 0 100%; min-width: 0; aspect-ratio: auto; object-fit: contain; user-select: none; }
+.beanie-arrow { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border: 1px solid #ffffff65; border-radius: 50%; background: #161815b3; color: #fff; font: 32px/1 Arial, sans-serif; cursor: pointer; }
+.beanie-arrow:hover { background: #161815; }
+.beanie-arrow:focus-visible, .beanie-carousel:focus-visible { outline: 3px solid #fff; outline-offset: -4px; }
+.beanie-prev { left: 12px; }
+.beanie-next { right: 12px; }
+.beanie-position { margin: 14px 0 0; color: var(--muted); font-size: 13px; }
+@media (prefers-reduced-motion: reduce) { .beanie-track { transition: none; } }
 .shop-preview figcaption { margin-top: 24px; font-size: clamp(22px, 3vw, 30px); letter-spacing: -0.025em; }
 .shop-product { padding: clamp(20px, 4vw, 56px); background: #22281f; color: var(--text); border: 1px solid var(--line); border-radius: 8px; color-scheme: dark; }
 .shop-product > p { margin: 0; line-height: 1.6; }

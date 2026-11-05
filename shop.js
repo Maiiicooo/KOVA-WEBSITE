@@ -1,6 +1,52 @@
 (function () {
   'use strict';
 
+  var carousel = document.querySelector('.beanie-carousel');
+  if (carousel) {
+    var track = carousel.querySelector('.beanie-track');
+    var slides = track.querySelectorAll('img');
+    var position = document.querySelector('.beanie-position');
+    var colours = ['Yellow', 'Blue', 'Black'];
+    var current = 0;
+    var touchStart = null;
+
+    function showSlide(index) {
+      current = (index + slides.length) % slides.length;
+      track.style.transform = 'translateX(-' + current * 100 + '%)';
+      slides.forEach(function (slide, i) {
+        slide.setAttribute('aria-hidden', String(i !== current));
+      });
+      position.textContent = colours[current] + ' · ' + (current + 1) + ' / ' + slides.length;
+    }
+
+    carousel.querySelectorAll('.beanie-arrow').forEach(function (button) {
+      button.hidden = false;
+      button.addEventListener('click', function () {
+        showSlide(current + (button.classList.contains('beanie-next') ? 1 : -1));
+      });
+    });
+    carousel.addEventListener('keydown', function (event) {
+      if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+        event.preventDefault();
+        showSlide(current + (event.key === 'ArrowRight' ? 1 : -1));
+      }
+    });
+    carousel.addEventListener('touchstart', function (event) {
+      touchStart = event.touches.length === 1
+        ? { x: event.touches[0].clientX, y: event.touches[0].clientY } : null;
+    }, { passive: true });
+    carousel.addEventListener('touchend', function (event) {
+      if (!touchStart) return;
+      var dx = event.changedTouches[0].clientX - touchStart.x;
+      var dy = event.changedTouches[0].clientY - touchStart.y;
+      touchStart = null;
+      if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy)) {
+        showSlide(current + (dx < 0 ? 1 : -1));
+      }
+    }, { passive: true });
+    carousel.addEventListener('touchcancel', function () { touchStart = null; }, { passive: true });
+  }
+
   // Keep the Shopify configuration below for launch; toggle it in shop.html.
   if (document.body.dataset.shopifyEnabled !== 'true') return;
 
